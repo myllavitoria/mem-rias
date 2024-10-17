@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memória Escolar - [Nome da Escola]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #004080;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        section {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .depoimentos, .envio-memoria {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #004080;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Memória Escolar - [Nome da Escola]</h1>
+        <p>Preservando as histórias e momentos que marcaram nossa trajetória.</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#galeria">Galeria de Fotos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#envie-memoria">Envie sua Memória</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Galeria de Fotos -->
+    <section id="galeria">
+        <h2>Galeria de Fotos</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Evento 1">
+            <img src="foto2.jpg" alt="Evento 2">
+            <img src="foto3.jpg" alt="Evento 3">
+            <img src="foto4.jpg" alt="Evento 4">
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+        <h2>Depoimentos de Ex-Alunos</h2>
+        <p><strong>Maria Souza:</strong> "Lembro-me com carinho das aulas de história e dos amigos que fiz. Foram anos inesquecíveis."</p>
+        <p><strong>João Oliveira:</strong> "A melhor época da minha vida foi quando participei da feira de ciências. Foi emocionante!"</p>
+        <p><strong>Carla Lima:</strong> "Ser parte dessa escola me ajudou a ser quem sou hoje. Eternamente grata!"</p>
+    </section>
+
+    <!-- Envio de Memórias -->
+    <section id="envie-memoria" class="envio-memoria">
+        <h2>Envie sua Memória</h2>
+        <form action="enviar_memoria.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="memoria">Sua Memória:</label>
+            <textarea id="memoria" name="memoria" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 [Nome da Escola] - Memória Escolar. Todos os direitos reservados.</p>
+        <p><a href="mailto:contato@escola.com.br" style="color: #fff;">contato@escola.com.br</a></p>
+    </footer>
+
+</body>
+</html>
